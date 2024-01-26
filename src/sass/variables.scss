@@ -1,0 +1,25 @@
+$font-family: 'Lato', 'Open Sans', sans-serif;
+$title-font: 'Comfortaa';
+.clickable{
+  cursor: pointer;
+}
+.v-application {
+  [class*='text-'] {
+    color: #333;
+    font-family: $font-family, sans-serif !important;
+
+    line-height: 163%;
+  }
+
+  font-family: $font-family, sans-serif !important;
+}
+
+@import '~vuetify/dist/vuetify.min.css';
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 580px,
+        lg: 992px,
+        xl: 1200px
+);

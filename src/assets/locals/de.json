@@ -1,0 +1,212 @@
+{
+  "start": {
+    "title": "Willkommen",
+    "introductionText":  "Willkommen bei Wortgut! Auf dieser Seite des Citizen Science Projekt  <a href='http://iam.dioe.at/' target='_blank'>IamDiÖ</a> kannst du Wörter und Informationen zu ihnen, wie Bedeutung, wie sie verwendet werden und Weiteres eintragen, aber auch suchen. Du kannst die Wörter in Sammlungen zusammenstellen und somit dein eigenes digitales „Wörterbuch“ erstellen – alleine oder mit anderen. Alle können hier zum/r Lexikographen/in werden.",
+    "popular": "beliebt",
+    "discussed": "heiß diskutiert",
+    "title2": "Leg gleich los!",
+    "chapter2text":  "Der erste Schritt ist, ein Wort zu sammeln – du kannst hier alle möglichen Wörter sammeln, die dir einfallen. Zum Beispiel aus einem bestimmten Dialekt, aus einer Jugendsprache, einer Fachsprache, Wörter, die üblicherweise in deiner Gegend verwendet werden – jedes Wort ist ein gutes Wort und kann Bestandteil unserer Wortgutsammlung werden. Starte mit deinem ersten Wort:",
+    "title3": "Was wolltest du schon immer wissen?",
+    "chapter3text":  "Hast du vielleicht ein Wort gehört und kennst dessen Bedeutung nicht? Dann frag einfach unsere Community. Oder schau bei {postings}, welche offenen Fragen es gibt – vielleicht kannst du ja anderen dabei helfen, der Bedeutung, Verwendung oder Herkunft eines Worts auf die Schliche zu kommen. Wortgut versammelt Interessent*innen von überall: Citizen Scientists genauso wie ausgebildete Lexikograph*innen.",
+    "postings" : "Fragen"
+  },
+  "lexemes":{
+    "desciption":  "Hier findest du alle {amount} Wörter, die in Wortgut bis jetzt gesammelt worden sind und kannst unsere Sammlung durchsuchen und Wörter zu deinen Sammlungen hinzufügen.",
+    "authorizedAdded": "Du hast bereits {amount} Wörter hinzugefügt. Mach weiter so!",
+    "notAuthorized":  "Wenn du auch anderen helfen willst neue Wörter zu entdecken, dann melde dich an und füge deine eigenen Wörter hinzu.",
+    "downloadAllAsCSV": "Gesamte Datenbank als CSV-Datei herunterladen"
+  },
+  "collections": {
+    "title": "Sammlungen",
+    "description":  "Hier kannst du {createCollection}, um verschiedenste Wörter zu sammeln und zu ordnen. Küchenausdrücke, mathematische Begriffe oder doch lieber die Wörter, die in deinem Dorf verwendet werden – du entscheidest, was in deine Sammlung kommt! Schau auch nach, welche interessanten Sammlungen andere Mitglieder bereits erstellt und veröffentlicht haben. ",
+    "createCollection": "eigene Sammlungen erstellen",
+    "myCollections": "privat",
+    "publicCollections": "öffentlich"
+  },
+  "groups": {
+    "title": "Gruppen",
+    "description":  "Du willst nicht alleine auf die Wörtersammlung gehen? Dann {createGroup} und lade andere ein, mit dir gemeinsam an Sammlungen zu arbeiten. Du kannst innerhalb einer Gruppe eine Sammlung anlegen, die nur für euch zu sehen ist. So könnt ihr vor der Veröffentlichung in Ruhe gemeinsam an Wörtern und Sammlungen arbeiten. ",
+    "myCollections": "meine Gruppen",
+    "createGroup": "erstelle hier eine Gruppe",
+    "publicCollections": "alle Gruppen"
+  },
+  "highscore": {
+    "title": "Bestenliste",
+    "description": "",
+    "publicCollections": "alle Gruppen"
+  },
+  "collectionDetail": {
+    "collectionEmpty": "Diese Sammlung ist leer. Fülle sie mit deinen Lieblingswörtern!",
+    "addWords":"Wörter hinzufügen",
+    "deleteCollection": "Sammlung löschen",
+    "pdf": "in eine PDF-Datei umwandeln",
+    "csv": "in eine CSV-Datei umwandeln"
+  },
+  "groupDetails":{
+    "created":"erstellt von",
+    "leaveGroup":"Gruppe verlassen",
+    "deleteGroup": "Gruppe löschen",
+    "members" : "Mitglieder",
+    "owner": "Besitzer*In",
+    "invitationLink": "Einladungs-Link",
+    "ourCollections": "Unsere Sammlungen",
+    "noCollectionMessages": "Diese Gruppe besitzt noch keine Sammlungen."
+  },
+  "groupSettings": {
+    "name": "Gruppenname",
+    "description": "Beschreibung",
+    "organization": "Organisation",
+    "addCollection": "kann Sammlungen erstellen",
+    "addCollectionMembers": "können Sammlungen erstellen",
+    "seeGroup": "kann Gruppe sehen",
+    "joinGroup": "jeder kann Gruppe beitreten",
+    "needPassword": "Zum Beitreten wird ein Passwort benötigt"
+  },
+  "dashboard": {
+    "title": "Meine Pinnwand",
+    "myWords": "Meine Wörter",
+    "myCollections": "Meine Sammlungen",
+    "discover": "Entdecke neue Wörter",
+    "posts": "Fragen"
+  },
+  "card_create":{  
+    "title": "Wort erstellen",
+    "description":"Hier kannst du deine eigenen Wörter nach und nach eintragen. Und zwar in 3 Detailgraden: Beginn am besten als \"Anfänger*in\", wenn du allerdings mehr zu einem Wort zu sagen hast, kannst du sicherlich den \"Sammler*in\"-Modus verwenden. Wenn du schon Expert*in bist, dann kannst du die meisten Informationen als \"Lexikograph*in\" eintragen - bitte vergiss nicht, Quellen anzugeben, wenn du Informationen aus Wörterbüchern oder anderen Quellen verwendest",
+    "tab_title1": "Anfänger*in",
+    "tab_title2": "Sammler*in",
+    "tab_title3": "Lexikograph*in",
+    "createButton1": "Wort erstellen",
+    "createButton2": "Wort erstellen und nächstes Wort hinzufügen",
+    "createButton3": "Wort erstellen und weitere Bedeutung hinzufügen",
+    "successMessage": "Wort wurde hinzugefügt!",
+    "failureMessage": "Hoppla! Ein Fehler ist aufgetreten.",
+    "chooseCollection": "Suche die Sammlungen aus zu denen du das Wort hinzufügen möchtest oder erstelle eine neue.",
+    "createCollection": "Erstelle Sammlung: ",
+    "chooseCategory": "Suche oder erstelle eine oder mehrere Kategorien",
+    "createCategory": "Erstelle eine Kategorie: "
+  },
+  "postings": {
+    "title": "Fragen",
+    "description":"Hier kannst du Fragen zu Wörtern an die Wortgut-Community stellen und anderen helfen, Antworten auf ihre Fragen zu finden.",
+    "delete": "löschen",
+    "edit": "bearbeiten",
+    "report": "melden",
+    "commentTitle": "Kommentieren",
+    "noCommentMessage": "Noch niemand hat hier etwas kommentiert.<br> Kannst du <span class=\"font-weight-bold\"> {user} </span> weiterhelfen?"
+  },
+  "reportDialog": {
+    "title": "Melden",
+    "subtitle": "Weshalb möchtest du den Beitrag melden?",
+    "report": "melden"
+  },
+  "reports": {
+    "title": "Meldungen",
+    "tabTitle1": "Wörter",
+    "tabTitle2": "Fragen",
+    "word": "Wort",
+    "reportedFrom": "gemeldet von",
+    "reportetAt": "gemeldet am",
+    "message": "Nachricht",
+    "edit": "bearbeiten",
+    "post": "Frage",
+    "author": "Benutzer"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "dataProtection": "Datenschutz",
+    "followUs": "Folgt uns"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  "dataProtection": {
+    "title": "Datenschutz",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  "createWord": {
+    "lemma": "Lemma",
+    "lemmaToolTip": "Das Stichwort / spannende Wort, das du angeben möchtest.",
+    "pronunciation": "Aussprache (IPA)",
+    "pronunciationToolTip": "Aussprache verschriftlicht nach Internationalem Phonetischem Alphabet (IPA)",
+    "lexeme": "standarddeutsche Entsprechung (wenn vorhanden)",
+    "lexemeToolTip": "Wenn möglich, schreibe hier ein standarddeutsches (=\"hochdeutsches\") Wort rein, das deinem Wort entspricht.",
+    "description": "Bedeutungserklärung",
+    "descriptionToolTip": "Hier kannst du eine oder mehrere Bedeutungen des Wortes angeben, versuche dabei so genau wie möglich zu sein. Die erste Beudeutung sollte die Hauptbedeutung sein.",
+    "example": "Beispiele",
+    "exampleToolTip": "Hier kannst du Beispiele angeben, wie das Wort verwendet wird, am besten in einem Satz.",
+    "etymology": "Etymologie",
+    "etymologyToolTip": "Hier kannst du die Herkunft des Wortes beschreiben, wenn du sie weißt.",
+    "category": "Kategorie",
+    "categoryToolTip": "Hier kannst du den Lebensbereich/das Thema auswählen, zu dem das Wort gehört.",
+    "variety": "Sprechweise / Varietät",
+    "varietyToolTip": "Unter \"Varietät\" verstehen wir verschiedene Formen ein und derselben Sprache, z.B. kann das ein bestimmert Dialekt (z.B.: Vorarlbergerisch) oder eine Jugensprache ( Wiener Jugendsprache) oder eine Fachsprache (Handwerk, Landwirtschaft, Biologie) sein. Ihr wisst selbst am besten, welcher Sprechweise ihr welches Wort zuordnen würdet! ",
+    "locationToolTip": "Ort an dem das Wort verwendet wird, du kannst einzelne Orte angeben oder ganze Regionen.",
+    "source": "Quelle",
+    "sourceToolTip": "Füge hier die Quellen an, aus denen du deine Informationen bezogen hast.",
+    "sensitive": "ACHTUNG: Dieses Wort hat einen vulgären Inhalt oder kann als beleidigend empfunden werden!",
+    "noun": "Nomen",
+    "nounTooltip": "auch Hauptwort oder Substantiv genannt",
+    "verb": "Verb",
+    "verbTooltip": "auch Zeitwort oder Tunwort genannt",
+    "adjective": "Adjektiv",
+    "adjectiveTooltip": "auch Eigenschafschaftswort genannt",
+    "adverb": "Adverb",
+    "adverbTooltip": "auch Umstandswort genannt",
+    "interjection": "Interjektion",
+    "interjectionTooltip": "auch Empfindungs- oder Ausfrufewort genannt",
+    "phrase": "Phrase",
+    "phraseTooltip": "auch Redewendung oder Idiom genannt (feste Verbindung mehrerer Wörter, die eine eigene Bedeutung haben)",
+    "female": "Femininum",
+    "femaleToolTip": "",
+    "male": "Maskulinum",
+    "maleToolTip": "",
+    "neuter": "Neutrum",
+    "neuterToolTip": "",
+    "collection":"zu Sammlungen hinzufügen",
+    "collectionToolTip": "Suche nach deinen Sammlungen oder erstelle eine neue Sammlung, indem du einfach den gewünschten Namen für die Sammlung eingibst.",
+    "usedIn": "wird verwendet in"
+  },
+  "general": {
+    "delete": "löschen",
+    "search": "Suche",
+    "public": "öffentlich",
+    "password": "Passwort",
+    "trash": "Papierkorb",
+    "settings": "Einstellungen",
+    "save": "speichern"
+  },
+  "joinGroup":{
+    "text": "Möchtest du der Gruppe '{group}' beitreten?",
+    "passwdRequired": "Um dieser Gruppe beizutreten wird ein passwort benötigt"
+  },
+  "card":{
+    "myCollections": "Meine Sammlungen",
+    "addToCollectionToolTip": "zu Sammlung hinzufügen",
+    "edit":"bearbeiten",
+    "editTitle": "Wort bearbeiten",
+    "lemma":"Lemma",
+    "meaning":"Bedeutungserklärung",
+    "lexeme": "standarddt. Entsprechung",
+    "variety" : "Varietät",
+    "kind":"Wortart",
+    "category":"Kategorie",
+    "removeFromCollection": "Wort aus Sammlung entfernen",
+    "sensitive": "vulgär oder beleidigend"
+
+  },
+  "searchbar":{
+    "search": "Suchen",
+    "orderby": "Sortieren",
+    "created_at" : "erstellt am",
+    "descending":"absteigend",
+    "ascending":"aufsteigend"
+  },
+  "search":{
+    "noResults":"Leider konnten keine passenden Ergebnisse gefunden werden."
+  },
+  "login": {
+    "notAuhtenticated": "Um auf die von dir gewünschte Seite zuzugreifen, musst du angemeldet sein. Wenn du bereits einen Account hast melde dich an. Andernfalls kannst du dich hier auch ganz einfach registrieren und Wortgut mit allen Features nutzen."
+  }
+  
+}
