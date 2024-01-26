@@ -1,6 +1,7 @@
 # build stage
-FROM node:lts-alpine as build-stage
+FROM node:17-alpine as build-stage
 
+ENV BACKEND_PORT 5000
 ENV VUE_APP_API_ENDPOINT "http://localhost:${BACKEND_PORT}/"
 ENV ENTRY_PORT 80
 ENV NODE_ENV production
@@ -12,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # production stage
-FROM nginx:stable-alpine as production-stage
+FROM nginxinc/nginx-unprivileged:stable-alpine
 COPY nginx.config /etc/nginx/conf.d/default.conf
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/dist /app
