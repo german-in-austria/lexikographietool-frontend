@@ -16,7 +16,7 @@
           <a href="http://www.univie.ac.at/" target="_blank">
             <v-img
               class="footer-img"
-              src="<%= BASE_URL %>uni-wien.png"
+              src="`${BASE_URL}/uni-wien.png`"
               contain
               max-height="50px"
             ></v-img>
@@ -24,7 +24,7 @@
           <a href="https://www.uni-salzburg.at/" target="_blank">
             <v-img
               class="footer-img"
-              src="<%= BASE_URL %>uni-sbg.png"
+              src="`${BASE_URL}/uni-sbg.png`"
               contain
               max-height="50px"
             ></v-img>
@@ -32,7 +32,7 @@
           <a href="http://www.oeaw.ac.at/" target="_blank">
             <v-img
               class="footer-img"
-              src="<%= BASE_URL %>oeaw.png"
+              src="`${BASE_URL}/oeaw.png`"
               contain
               max-height="50px"
             ></v-img>
@@ -40,7 +40,7 @@
           <a href="https://www.fwf.ac.at/" target="_blank">
             <v-img
               class="footer-img"
-              src="<%= BASE_URL %>fwf.png"
+              src="`${BASE_URL}/fwf.png`"
               contain
               max-height="50px"
             ></v-img>
@@ -48,7 +48,7 @@
           <a href="http://www.uni-graz.at/" target="_blank">
             <v-img
               class="footer-img"
-              src="<%= BASE_URL %>uni-graz.png"
+              src="`${BASE_URL}/uni-graz.png`"
               contain
               max-height="50px"
             ></v-img>
@@ -74,7 +74,7 @@
             >
               <v-avatar size="15px">
                 <img
-                  src="<%= BASE_URL %>FB-f-Logo__blue_29.png"
+                  src="`${BASE_URL}/FB-f-Logo__blue_29.png`"
                   alt="Facebooklogo"
                 />
               </v-avatar>
@@ -86,7 +86,7 @@
               >
                 <v-avatar size="15px">
                   <img
-                    src="<%= BASE_URL %>Twitter_Logo_White_On_Blue.png"
+                    src="`${BASE_URL}/Twitter_Logo_White_On_Blue.png`"
                     alt="Twitterlogo"
                   />
                 </v-avatar>
@@ -98,7 +98,7 @@
               target="_blank"
             >
               <v-avatar size="15px">
-                <img src="<%= BASE_URL %>feed-icon-28x28.png" alt="Feedicon" />
+                <img src="`${BASE_URL}/feed-icon-28x28.png`" alt="Feedicon" />
               </v-avatar>
             </a>
           </div>
@@ -111,6 +111,12 @@
 <script>
 export default {
   name: 'Footer',
+  data() {
+    return {
+      // BASE URL
+      BASE_URL: process.env.BASE_URL,
+    };
+  },
   methods: {
     openLink() {
       // window.location.href = 'http://example.com/';

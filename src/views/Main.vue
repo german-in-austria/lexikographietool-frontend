@@ -4,7 +4,7 @@
       <ul>
         <li><a href="https://www.dioe.at/">SFB DiÖ</a></li>
         <li><a href="https://iam.dioe.at/">IamDiÖ</a></li>
-        <li><a href="<%= BASE_URL %>" class="active">Wortgut</a></li>
+        <li><a href="`${BASE_URL}/`" class="active">Wortgut</a></li>
       </ul>
     </div>
 
