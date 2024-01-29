@@ -4,12 +4,11 @@
       <ul>
         <li><a href="https://www.dioe.at/">SFB DiÖ</a></li>
         <li><a href="https://iam.dioe.at/">IamDiÖ</a></li>
-        <li><a href="https://lex.dioe.at/" class="active">Wortgut</a></li>
+        <li><a href="<%= BASE_URL %>" class="active">Wortgut</a></li>
       </ul>
     </div>
 
     <AppBar class="appbar"></AppBar>
-
 
     <!--        <div class="hidden-sm-and-down" style="position: sticky; top:50px; background-color: green ">-->
     <!--          <Navigation-->
@@ -30,51 +29,73 @@
     <!--        </v-container>-->
 
     <Navigation
-        class="sidebar hidden-sm-and-down"
-        v-model="collapsedNav"
+      class="sidebar hidden-sm-and-down"
+      v-model="collapsedNav"
     ></Navigation>
-    <div class="containerContent"
-                 :style="cssVars">
-      <router-view :key="$route.fullPath"/>
+    <div class="containerContent" :style="cssVars">
+      <router-view :key="$route.fullPath" />
       <notification-pop-up></notification-pop-up>
-
     </div>
 
     <Footer style="z-index: 4; position: relative"></Footer>
 
-    <navigation-mobile style="z-index: 4;" class="hidden-md-and-up"></navigation-mobile>
+    <navigation-mobile
+      style="z-index: 4"
+      class="hidden-md-and-up"
+    ></navigation-mobile>
   </v-app>
 </template>
 
 <script>
-import Navigation from "@/components/Navigation";
-import NavigationMobile from "@/components/NavigationMobile";
-import AppBar from "@/components/AppBar";
-import {mapGetters} from "vuex";
-import Footer from "@/components/Footer";
-import NotificationPopUp from "@/components/NotificationPopUp";
+import Navigation from '@/components/Navigation';
+import NavigationMobile from '@/components/NavigationMobile';
+import AppBar from '@/components/AppBar';
+import { mapGetters } from 'vuex';
+import Footer from '@/components/Footer';
+import NotificationPopUp from '@/components/NotificationPopUp';
 
 export default {
-  components: {NotificationPopUp, Footer, AppBar, NavigationMobile, Navigation},
+  components: {
+    NotificationPopUp,
+    Footer,
+    AppBar,
+    NavigationMobile,
+    Navigation,
+  },
   data: () => ({
-    collapsedNav: false
+    collapsedNav: false,
   }),
   computed: {
-
     ...mapGetters({
-      authenticated: "auth/authenticated",
-      notifications: "notifications/notifications"
+      authenticated: 'auth/authenticated',
+      notifications: 'notifications/notifications',
     }),
     styleClass() {
-      if (!this.collapsedNav) return "notcollapsed"
-      return "collapsed"
+      if (!this.collapsedNav) return 'notcollapsed';
+      return 'collapsed';
     },
     cssVars() {
       if (this.$vuetify.breakpoint.smAndDown)
-        return {'--margin-left': 0 + 'px', '--padding': 1 + 'rem','--margin-top': 0 + 'px','--margin-bottom': 5 + 'rem' }
-      if (!this.collapsedNav) return {'--margin-left': 200 + 'px', '--padding': 2 + 'rem','--margin-top': -600 + 'px','--margin-bottom': 0+ 'rem'}
-      return {'--margin-left': 70 + 'px', '--padding': 2 + 'rem','--margin-top': -600 + 'px','--margin-bottom': 0 + 'rem'}
-    }
+        return {
+          '--margin-left': 0 + 'px',
+          '--padding': 1 + 'rem',
+          '--margin-top': 0 + 'px',
+          '--margin-bottom': 5 + 'rem',
+        };
+      if (!this.collapsedNav)
+        return {
+          '--margin-left': 200 + 'px',
+          '--padding': 2 + 'rem',
+          '--margin-top': -600 + 'px',
+          '--margin-bottom': 0 + 'rem',
+        };
+      return {
+        '--margin-left': 70 + 'px',
+        '--padding': 2 + 'rem',
+        '--margin-top': -600 + 'px',
+        '--margin-bottom': 0 + 'rem',
+      };
+    },
   },
 };
 </script>
@@ -85,10 +106,7 @@ export default {
   align-items: flex-start;
   overflow-y: auto;
   justify-content: space-between;
-
 }
-
-
 
 .sidebar {
   height: 600px;
@@ -112,8 +130,6 @@ export default {
   margin-bottom: var(--margin-bottom);
   padding: var(--padding);
   padding-top: 2rem;
-
-
 }
 
 /* DiÖ Nav */
@@ -150,14 +166,15 @@ export default {
   color: #a7a7a7;
 }
 
-.dioe-nav > ul > li > a:hover, .dioe-nav > ul > li > a:focus {
+.dioe-nav > ul > li > a:hover,
+.dioe-nav > ul > li > a:focus {
   background: #a7a7a7;
   color: #fff;
   text-decoration: none;
 }
 
 .dioe-nav > ul > li > a.active::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 50%;
