@@ -1,16 +1,23 @@
 # build stage
-FROM node:17-alpine as build-stage
+FROM node:16-alpine as build-stage
 
-ENV BACKEND_PORT 5000
-ENV VUE_APP_API_ENDPOINT "http://localhost:${BACKEND_PORT}/"
+ARG END_POINT
+
+ENV BACKEND_PORT 8000
+ENV VUE_APP_API_ENDPOINT $END_POINT
 ENV ENTRY_PORT 80
-ENV NODE_ENV production
+
 
 WORKDIR /app 
 COPY package*.json ./
+
 RUN npm install
-COPY . .
+
+COPY . /app
+
 RUN npm run build
+
+ENV NODE_ENV production
 
 # production stage
 FROM nginxinc/nginx-unprivileged:stable-alpine
