@@ -20,6 +20,7 @@
     "vue-disable-autocomplete": "0.0.4",
     "vue-html-to-paper": "^1.4.1",
     "vue-i18n": "^8.24.4",
+    "vue-loader": "^17.4.2",
     "vue-meta": "^2.4.0",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.5.1",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@mdi/font": "^5.9.55",
     "@nuxtjs/vuetify": "^1.11.3",
+    "@types/node": "^20.11.10",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/cli-service": "^4.5.13",
