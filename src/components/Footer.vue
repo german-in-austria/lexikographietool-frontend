@@ -172,7 +172,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-size: contain;
-  background: url(./mountains.png) no-repeat center bottom;
+  background: url(../../public/mountains.png) no-repeat center bottom;
   bottom: 0;
 }
 
@@ -186,6 +186,6 @@ a {
 
   bottom: 50px;
   background-size: contain;
-  background: url(./mountains.png) no-repeat center bottom;
+  background: url(../../public/mountains.png) no-repeat center bottom;
 }
 </style>
