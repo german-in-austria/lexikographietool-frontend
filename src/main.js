@@ -28,7 +28,7 @@ Vue.use(VueHtmlToPaper, options);
 Vue.use(PerfectScrollbar);
 Vue.use(VueI18n);
 // axios.defaults.baseURL = '/api/'
-axios.defaults.baseURL = `${process.env.VUE_APP_API_ENDPOINT}:${process.env.BACKEND_PORT}`;
+axios.defaults.baseURL = `${process.env.VUE_APP_API_ENDPOINT}`;
 
 const i18n = new VueI18n({
   locale: 'de', // set locale
