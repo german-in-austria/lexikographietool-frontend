@@ -4,7 +4,7 @@ FROM node:16-alpine as build-stage
 ARG END_POINT
 
 ENV BACKEND_PORT 8000
-ENV VUE_APP_API_ENDPOINT "https://wortgut-backend.acdh-ch-dev.oeaw.ac.at"
+ENV VUE_APP_API_ENDPOINT $END_POINT
 ENV ENTRY_PORT 80
 
 

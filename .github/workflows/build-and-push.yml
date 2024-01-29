@@ -128,7 +128,7 @@ jobs:
           cache-to: type=gha,mode=max
           file: Dockerfile
           build-args: |
-            END_POINT="${{ vars.BACKEND_URI }}"
+            END_POINT=${{ vars.BACKEND_URI }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
